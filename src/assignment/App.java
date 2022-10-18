@@ -13,7 +13,7 @@ public class App {
 		Player player2 = new Player("Player 2");
 		
 		deck.shuffle();
-		player2.drawEvenCard();
+		player1.drawEvenCard();
 		player2.drawOddCard();
 		
 		System.out.println("The deck of cards has been shuffled!");
@@ -25,7 +25,7 @@ public class App {
 //			player2.describe();
 //		}
 		
-		System.out.println(player2.hand.isEmpty());
+		System.out.println(player1.hand.isEmpty());
 	
 
 	}

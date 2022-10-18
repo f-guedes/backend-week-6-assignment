@@ -19,7 +19,7 @@ public class Player extends Deck{
 		for (int i = 0; i < 53; i++) {
 			if (i % 2 == 0) {
 				hand.set(i, deckOfCards.get(i));
-			} 
+			}
 		}
 	}
 	
