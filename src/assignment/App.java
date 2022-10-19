@@ -33,9 +33,11 @@ public class App {
 				if (player1.describe(card1)> player2.describe(card2)) {
 					player1.increaseScore();
 					System.out.println("Player 1 beat player 2 in this round. Let's play the next round");
+					System.out.println("");
 				} else if (player1.describe(card1)< player2.describe(card2)) {
 					player2.increaseScore();
 					System.out.println("Player 2 beat player 1 in this round. Let's play the next round");
+					System.out.println("");
 				} else {}
 			}
 		}
@@ -50,7 +52,7 @@ public class App {
 			System.out.println("No winners today... we have a draw!");
 		}
 		System.out.println("");
-		System.out.println("");
+		
 		System.out.println("End of game! Good bye!");
 		
 	}
