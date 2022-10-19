@@ -31,7 +31,7 @@ public class Player extends Deck{
 		return cardOnTop.getValue();
 	}
 	
-	public void increaseScore(){
+	public void incrementScore(){
 		this.score += 1;
 	}
 	

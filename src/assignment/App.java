@@ -31,11 +31,11 @@ public class App {
 				System.out.print("Player 2 flipped a(n) "); card2.describe();
 				
 				if (player1.describe(card1)> player2.describe(card2)) {
-					player1.increaseScore();
+					player1.incrementScore();
 					System.out.println("Player 1 beat player 2 in this round. Let's play the next round");
 					System.out.println("");
 				} else if (player1.describe(card1)< player2.describe(card2)) {
-					player2.increaseScore();
+					player2.incrementScore();
 					System.out.println("Player 2 beat player 1 in this round. Let's play the next round");
 					System.out.println("");
 				} else {}
