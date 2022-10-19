@@ -32,28 +32,42 @@ public class App {
 				
 				if (player1.describe(card1)> player2.describe(card2)) {
 					player1.incrementScore();
-					System.out.println("Player 1 beat player 2 in this round. Let's play the next round");
+					System.out.println("Player 1 beat player 2 in this round.");
+					System.out.println("The current score is Player 1 with " + player1.getScore()+ " victories and Player 2 with " + player2.getScore() + ".");
+					System.out.println("Let's play the next round");
 					System.out.println("");
 				} else if (player1.describe(card1)< player2.describe(card2)) {
 					player2.incrementScore();
-					System.out.println("Player 2 beat player 1 in this round. Let's play the next round");
+					System.out.println("The current score is Player 2 with " + player2.getScore()+ " victories and Player 1 with " + player1.getScore() + ".");
+					System.out.println("Let's play the next round");
 					System.out.println("");
 				} else {}
 			}
 		}
 		
 		System.out.println("");
-		
-		if (player1.getScore() > player2.getScore()) {
-			System.out.println("Player 1 wins!");
-		} else if (player2.getScore() > player1.getScore()) {
-			System.out.println("Player 2 wins!");
-		} else {
-			System.out.println("No winners today... we have a draw!");
-		}
+		System.out.println("    * * * * * Final score * * * * *");
 		System.out.println("");
 		
-		System.out.println("End of game! Good bye!");
+		if (player1.getScore() > player2.getScore()) {
+			System.out.println("Player 1: " + player1.getScore() + " battles.");
+			System.out.println("Player 2: " + player2.getScore() + " battles.");
+			System.out.println("");
+			System.out.println("Player 1 wins the war!");
+		} else if (player2.getScore() > player1.getScore()) {
+			System.out.println("Player 1: " + player1.getScore() + " battles.");
+			System.out.println("Player 2: " + player2.getScore() + " battles.");
+			System.out.println("");
+			System.out.println("Player 2 wins the war!");
+		} else {
+			System.out.println("Player 1: " + player1.getScore() + " battles.");
+			System.out.println("Player 2: " + player2.getScore() + " battles.");
+			System.out.println("");
+			System.out.println("No winners today... we have a draw!");
+		}
+		
+		System.out.println("");
+		System.out.println("--- End of game! Good bye! ---");
 		
 	}
 	
