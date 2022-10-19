@@ -15,20 +15,9 @@ public class Player extends Deck{
 		this.score = 0;
 	}	
 	
-	public void drawEvenCard() {
-		for (int i = 0; i < 53; i++) {
-			if (i % 2 == 0) {
-				hand.set(i, deckOfCards.get(i));
-			}
-		}
-	}
 	
-	public void drawOddCard() {
-		for (int i = 0; i < 53; i++) {
-			if (i % 2 != 0) {
-				hand.set(i, deckOfCards.get(i));
-			} 
-		}
+	public void draw (Deck deck) {
+		hand.add(deck.draw());
 	}
 	
 	public Card flipTopCard() {
@@ -38,10 +27,12 @@ public class Player extends Deck{
 	}
 	
 	
-	public void describe() {
-		System.out.println("Player's name: "+ this.name + "Player's score: " + this.score);
-		
-		System.out.println(this.name + " played a(n) " + hand.get(0));
+	public int describe(Card cardOnTop) {
+		return cardOnTop.getValue();
+	}
+	
+	public void increaseScore(){
+		this.score += 1;
 	}
 	
 	

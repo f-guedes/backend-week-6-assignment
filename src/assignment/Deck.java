@@ -26,6 +26,22 @@ public class Deck extends ArrayList<Card>{
 		}		
 	}	
 	
+	public void createPlayersHands(Deck deck, Player player1, Player player2) {
+		for (int i = 0; i < 52; i++) {
+			if (i % 2 == 0) {
+				player1.draw(deck);
+			} else {
+				player2.draw(deck);
+			}
+		}
+	}
+	
+	public Card draw() {
+		Card cardOnTop = deckOfCards.get(0);
+		deckOfCards.remove(0);
+		return cardOnTop;
+	}
+	
 	/*
 	 * Public methods
 	 */

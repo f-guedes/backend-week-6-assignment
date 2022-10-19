@@ -21,7 +21,7 @@ public class Card {
 	 * Public methods - method "describe"
 	 */
 	public void describe() {
-		System.out.println(this.getName() + " " + this.getValue());
+		System.out.println(this.getValue() + " of " + this.getName());
 	}
 	
 	/*
