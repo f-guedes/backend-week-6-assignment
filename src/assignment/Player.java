@@ -27,7 +27,7 @@ public class Player extends Deck{
 	}
 	
 	
-	public int describe(Card cardOnTop) {
+	public int checkValue(Card cardOnTop) {
 		return cardOnTop.getValue();
 	}
 	

@@ -35,7 +35,7 @@ public class Deck extends ArrayList<Card>{
 			}
 		}
 	}
-	
+		
 	public Card draw() {
 		Card cardOnTop = deckOfCards.get(0);
 		deckOfCards.remove(0);
