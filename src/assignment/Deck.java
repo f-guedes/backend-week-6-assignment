@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Deck extends ArrayList<Card>{
+public class Deck {
 	
 	/*
 	 * Fields (arrays used to build each card)

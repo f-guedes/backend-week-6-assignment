@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Player extends Deck{
+public class Player {
 	
 	String name;
 	int score;

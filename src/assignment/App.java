@@ -16,6 +16,7 @@ public class App {
 		
 		deck.shuffle();		
 		deck.createPlayersHands(deck, player1, player2);
+		
 		System.out.println();
 		System.out.println("***The deck of cards has been shuffled!***");
 		System.out.println();
